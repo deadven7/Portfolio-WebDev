@@ -104,13 +104,12 @@ body {
     height: 100%;
 }
 .jumbotitle {
-    font-family:"Cinzel";
-    font-size: 80px;
-    font-weight: 900;
+    font-family:"Montserrat";
+    font-size: 40px;
     color: #FFFFFF;
 }
 .about {
-    background-color: #f7d300;
+    background-color: #111111;
 }
 .aboutsecs {
     padding: 10px; 
@@ -119,7 +118,7 @@ body {
 .abouttitle {
     font-family: 'Krona One';
     padding: 2.5%;
-    color: #000000;
+    color: #FAF884;
     font-size: 30px;
 }
 .aboutlogoresume {
@@ -134,27 +133,7 @@ body {
 .logostext {
     font-family: 'Montserrat';
     font-size: 20px;
-    color: #000000;
-}
-.codingtitle {
-    color: #4CAF50;
-    padding-left: 80px; 
-    font-size: 25px; 
-    font-family: monospace;
-}
-.codingtext {
-    padding-left: 80px;
-}
-.designtitle {
-    color: #4CAF50;
-    padding-right: 80px; 
-    font-size: 27px; 
-    font-family: 'Sofia'; 
-    text-align: end;
-}
-.designtext {
-    padding-right: 80px; 
-    text-align: end;
+    color: #ffffff;
 }
 .skill {
     padding-left: 120px; 
@@ -192,9 +171,9 @@ body {
     font-size: 24px;
 }
 .projtitle {
-    color: #4CAF50;
+    color: #3498DB;
     font-family: 'Krona One';
-    font-size: 30px;
+    font-size: 40px;
 }
 .projtext {
     font-family: 'Montserrat';
@@ -245,24 +224,6 @@ body {
 .experience {
     background-color: #4CAF50;
 }
-.art {
-    background-color: #FFFFFF;
-}
-.art-main {
-    font-family: 'Cinzel';
-    font-size: 50px;
-    font-weight: 900;
-    text-align: center;
-}
-.art-img {
-    text-align: center;
-}
-.art-title {
-    font-family: 'Cinzel';
-    font-size: 32px;
-    font-weight: 900;
-    text-align: center;
-}
 .social-logo {
     height: 70px;
     width: 70px;
@@ -285,47 +246,18 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.almaeriff-ph {
-    display: none;
-}
-.almaeriff-pic {
-    padding: 30px; 
-    width: 200px; 
-    height: 200px;
-    box-shadow: 0px 12px 18px 2px rgba(0,0,0,0.36);
-}
-.almaeriff-pic:hover {
-    width: 210px;
-    height: 210px;
-    transition: height 0.2s, width 0.2s;
-}
-.almaeriff-title-main {
-    color: #ffffff;
-    font-size: 30px;
-    font-family: 'Krona One';
-}
-.almaeriff-title {
-    color: #ffffff;
-    font-size: 22px;
-    font-family: 'Krona One';
-}
-.almaerifftext {
-    font-family: 'Montserrat';
-    font-size: 24px;
-    color: #FFFFFF;
-}
 .port-main {
     text-align: center;
-    background: url("contents/images/certificate.jpg");
+    background: url("contents/images/certificate.png");
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
     height: 100%;
     max-height: 600px;
-    box-shadow: 0px 12px 18px 2px rgba(0,0,0,0.36);
+    box-shadow: 0px 12px 18px 2px rgba(255, 255, 255, 0.36);
 }
 .port {
-    background-color: #cb2a2a;
+    background-color: #111111;
     padding: 4.5%;
 }
 .port-ph {
@@ -335,8 +267,8 @@ body {
     padding: 5% 20%;
 }
 .port-title {
-    color: #000000;
-    font-family: 'Cinzel';
+    color: #CC0032;
+    font-family: 'Krona One';
     font-weight: 800;
     letter-spacing: 1px;
     font-size: 55px;
@@ -353,7 +285,7 @@ body {
     font-family: 'Krona One';
     font-size: 50px;
     font-weight: 900;
-    color: #ED944D;
+    color: #CC0032;
     text-align: center;
 }
 .ft {
@@ -366,6 +298,44 @@ body {
     width: 60px;
     height: 60px;
     transition: height 0.2s, width 0.2s;
+}
+.images {
+    position: block;
+    width: 100%;
+    height: 100% !important;
+    border-radius: 25px;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #000;
+    border-radius: 25px;
+}
+.box {
+    position: relative;
+    height: 100%;
+}
+.box:hover .overlay {
+    opacity: 0.75;
+}
+.text {
+    color: white;
+    font-size: 40px;
+    font-family: 'Lato';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
 @media (max-width: 1400px) {        
     .art-title {
@@ -393,7 +363,7 @@ body {
 }
 @media (max-width: 992px) {
     .jumbotitle {
-        font-size: 50px !important;
+        font-size: 30px !important;
     }
     .ph-nav {
         display: block;
@@ -414,7 +384,7 @@ body {
     .logostext {
         font-family: 'Montserrat';
         font-size: 16px;
-        color: #000000;
+        color: #ffffff;
     }
     .codingtitle {
         padding-left: 30px !important; 
@@ -446,6 +416,9 @@ body {
     }
     .counter-text {
         font-size: 75px !important;
+    }
+    .text {
+        font-size: 25px !important;
     }
     .stats {
         border: 0px transparent !important;
@@ -483,6 +456,16 @@ body {
         width: 150px !important; 
         height: 150px !important;
     }
+    .overlay {
+        padding: 20px;
+    }
+    .box {
+        padding: 20px;
+    }
+    .box .overlay {
+        padding: 20px;
+        opacity: 0.75;
+    }
     .port-pc {
         display: none;
     }
@@ -497,6 +480,9 @@ body {
     }
     .port-title {
         color: #ffffff;
+    }
+    .porttext {
+        color: #FFFFFF;
     }
     .portexp {
         color: #ffffff;
